@@ -1,5 +1,5 @@
 
- # Pro sidebar template
+ # FrondEnd GeoServer
 
 Sistema de FROND END para la carga de capas del Ayuntamiento de Xalapa
 
@@ -9,7 +9,6 @@ Sistema de FROND END para la carga de capas del Ayuntamiento de Xalapa
 
 ## Screenshot
 
-![Pro Sidebar](https://user-images.githubusercontent.com/25878302/57788668-c5fb5400-7737-11e9-91b7-7fd02703774c.png)
 
 ## Quick start
 
