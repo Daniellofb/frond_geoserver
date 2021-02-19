@@ -7,15 +7,15 @@
 */
 var realArrayCapas = [
     {'nombre':'Colonias', 'colorFill':'#faf2b7', 'colorStoker':'#e7c48c', 'nombreCampo':'NOMBRE', 'capa':'colonias_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/colonias_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=colonias_poligonos%3Acolonias_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Area Geoestadistica Municipal', 'colorFill':'#faf2b7', 'colorStoker':'#faf2b7', 'nombreCampo':'NOM_MUN', 'capa':'areageoestadisticabasicamunicipal_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/areageoestadisticabasicamunicipal_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=areageoestadisticabasicamunicipal_poligonos%3Aareageoestadisticabasicamunicipal_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Area Geoestadistica Municipal', 'colorFill':'#faf2b7', 'colorStoker':'#e7c48c', 'nombreCampo':'NOM_MUN', 'capa':'areageoestadisticabasicamunicipal_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/areageoestadisticabasicamunicipal_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=areageoestadisticabasicamunicipal_poligonos%3Aareageoestadisticabasicamunicipal_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     {'nombre':'Area Geoestadistica', 'colorFill':'#faf2b7', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'areageoestadisticabasicarural_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/areageoestadisticabasicarural_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=areageoestadisticabasicarural_poligonos%3Aareageoestadisticabasicarural_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     {'nombre':'Localidades Rurales', 'colorFill':'#f5e1de', 'colorStoker':'#f5e1de', 'nombreCampo':'NOM_LOC', 'capa':'localidadesurbanasrurales_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadesurbanasrurales_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadesurbanasrurales_poligonos%3Alocalidadesurbanasrurales_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Localidades Urbanas', 'colorFill':'#f5e1de', 'colorStoker':'#f5e1de', 'nombreCampo':'NOM_LOC', 'capa':'localidadurbanasrurales_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadurbanasrurales_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadurbanasrurales_poligonos%3Alocalidadurbanasrurales_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Zona Metropolitana', 'colorFill':'#c0ae5a', 'colorStoker':'#c0ae5a', 'nombreCampo':'', 'capa':'zonametropoliana_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/zonametropoliana_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=zonametropoliana_poligonos%3Azonametropoliana_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Localidades Urbanas', 'colorFill':'#f5e1de', 'colorStoker':'#f06de6', 'nombreCampo':'NOM_LOC', 'capa':'localidadurbanasrurales_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadurbanasrurales_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadurbanasrurales_poligonos%3Alocalidadurbanasrurales_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Zona Metropolitana', 'colorFill':'#c0ae5a', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'zonametropoliana_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/zonametropoliana_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=zonametropoliana_poligonos%3Azonametropoliana_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     {'nombre':'Cuerpos de Agua', 'colorFill':'#abd4dc', 'colorStoker':'#abd4dc', 'nombreCampo':'OID_1', 'capa':'cuerposagua_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/cuerposagua_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cuerposagua_poligonos%3Acuerposagua_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     //{'nombre':'Áreas Naturales Protegidas', 'colorFill':'', 'colorStoker':'', 'nombreCampo':'', 'capa':'anp_poligonos', 'gejson':''},
-    {'nombre':'AGED Rural(AM)', 'colorFill':'#f06de6', 'colorStoker':'#f06de6', 'nombreCampo':'', 'capa':'agebruralam_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/agebruralam_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=agebruralam_poligonos%3Aagebruralam_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'AGED Rural', 'colorFill':'#f5e1de', 'colorStoker':'#f5e1de', 'nombreCampo':'', 'capa':'agebrural_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/agebrural_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=agebrural_poligonos%3Aagebrural_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'AGED Rural(AM)', 'colorFill':'#f06de6', 'colorStoker':'#f5e1de', 'nombreCampo':'', 'capa':'agebruralam_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/agebruralam_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=agebruralam_poligonos%3Aagebruralam_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'AGED Rural', 'colorFill':'#f5e1de', 'colorStoker':'#f06de6', 'nombreCampo':'', 'capa':'agebrural_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/agebrural_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=agebrural_poligonos%3Aagebrural_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     //{'nombre':'Codigo Postal', 'colorFill':'', 'colorStoker':'', 'nombreCampo':'', 'capa':'cp_poligonos', 'gejson':''},
     {'nombre':'Codigo Postal(AM)', 'colorFill':'#f2e6e4', 'colorStoker':'#dcaccc', 'nombreCampo':'NOM_MUN', 'capa':'cpam_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/cpam_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cpam_poligonos%3Acpam_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     {'nombre':'Municipio', 'colorFill':'#f2e6e4', 'colorStoker':'#dcaccc', 'nombreCampo':'NOM_MUN', 'capa':'	municipio_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/municipio_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=municipio_poligonos%3Amunicipio_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
@@ -117,6 +117,7 @@ function generateGeoJson() {
             var createCharge = JSON.parse(xmlHttp.responseText);
             createCharge['features'].forEach(
                 charges => {
+                    charges['properties']['capa'] = element['nombre'];
                     var chargesProperties = JSON.stringify(charges['properties']);
                     var chargesGeometryType = charges['geometry']['type'];
                     var chargesGeometryCoordinates = JSON.stringify(charges['geometry']['coordinates']);
@@ -213,6 +214,23 @@ map.on('singleclick', function(evt) {
     });
 
     if (feature) {
+        map.getLayers().array_.forEach(
+            element => {
+                if (element.values_.title == feature.values_.capa) {
+                    realArrayCapas.forEach(
+                        canalReset => {
+                            if (canalReset.nombre == feature.values_.capa) {
+                                element.setStyle(new ol.style.Style({
+                                    fill: new ol.style.Fill({color: canalReset.colorFill}),
+                                    stroke: new ol.style.Stroke({color: canalReset.colorStoker})
+                                }));
+                            }
+                        }
+                    );
+                }
+            }
+        );
+
         feature.setStyle(new ol.style.Style({
             fill: new ol.style.Fill({color: '#eaa7a7'}),
             stroke: new ol.style.Stroke({color: '#f00'})
