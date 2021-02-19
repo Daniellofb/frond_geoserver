@@ -1,13 +1,11 @@
 
  # Pro sidebar template
 
-Responsive sidebar template with dropdown menu based on bootstrap framwork
-
-If you are looking for a version built with angular, then you should checkout the [Angular Pro Sidebar](https://github.com/azouaoui-med/angular-pro-sidebar) template
+Sistema de FROND END para la carga de capas del Ayuntamiento de Xalapa
 
 ## Demo
 
-[See it live](https://azouaoui-med.github.io/pro-sidebar-template/src)
+[See it live](http://cartografia.xalapa.gob.mx/)
 
 ## Screenshot
 
@@ -30,5 +28,5 @@ npm start
 *   [Malihu custom scrollbar plugin](https://github.com/malihu/malihu-custom-scrollbar-plugin)
 
 ## License
-This code is released under the [MIT](https://github.com/azouaoui-med/pro-sidebar-template/blob/gh-pages/LICENSE) license.
+This code is released under the [MIT] license.
 
