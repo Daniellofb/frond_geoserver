@@ -6,25 +6,38 @@
  * ?
 */
 var realArrayCapas = [
-    {'nombre':'Colonias', 'colorFill':'#faf2b7', 'colorStoker':'#e7c48c', 'nombreCampo':'NOMBRE', 'capa':'colonias_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/colonias_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=colonias_poligonos%3Acolonias_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Area Geoestadistica Municipal', 'colorFill':'#faf2b7', 'colorStoker':'#e7c48c', 'nombreCampo':'NOM_MUN', 'capa':'areageoestadisticabasicamunicipal_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/areageoestadisticabasicamunicipal_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=areageoestadisticabasicamunicipal_poligonos%3Aareageoestadisticabasicamunicipal_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Area Geoestadistica', 'colorFill':'#faf2b7', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'areageoestadisticabasicarural_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/areageoestadisticabasicarural_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=areageoestadisticabasicarural_poligonos%3Aareageoestadisticabasicarural_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Localidades Rurales', 'colorFill':'#f5e1de', 'colorStoker':'#f5e1de', 'nombreCampo':'NOM_LOC', 'capa':'localidadesurbanasrurales_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadesurbanasrurales_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadesurbanasrurales_poligonos%3Alocalidadesurbanasrurales_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Localidades Urbanas', 'colorFill':'#f5e1de', 'colorStoker':'#f06de6', 'nombreCampo':'NOM_LOC', 'capa':'localidadurbanasrurales_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadurbanasrurales_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadurbanasrurales_poligonos%3Alocalidadurbanasrurales_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Zona Metropolitana', 'colorFill':'#c0ae5a', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'zonametropoliana_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/zonametropoliana_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=zonametropoliana_poligonos%3Azonametropoliana_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Cuerpos de Agua', 'colorFill':'#abd4dc', 'colorStoker':'#abd4dc', 'nombreCampo':'OID_1', 'capa':'cuerposagua_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/cuerposagua_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cuerposagua_poligonos%3Acuerposagua_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    //{'nombre':'Áreas Naturales Protegidas', 'colorFill':'', 'colorStoker':'', 'nombreCampo':'', 'capa':'anp_poligonos', 'gejson':''},
-    {'nombre':'AGED Rural(AM)', 'colorFill':'#f06de6', 'colorStoker':'#f5e1de', 'nombreCampo':'', 'capa':'agebruralam_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/agebruralam_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=agebruralam_poligonos%3Aagebruralam_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'AGED Rural', 'colorFill':'#f5e1de', 'colorStoker':'#f06de6', 'nombreCampo':'', 'capa':'agebrural_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/agebrural_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=agebrural_poligonos%3Aagebrural_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    //{'nombre':'Codigo Postal', 'colorFill':'', 'colorStoker':'', 'nombreCampo':'', 'capa':'cp_poligonos', 'gejson':''},
-    {'nombre':'Codigo Postal(AM)', 'colorFill':'#f2e6e4', 'colorStoker':'#dcaccc', 'nombreCampo':'NOM_MUN', 'capa':'cpam_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/cpam_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cpam_poligonos%3Acpam_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Municipio', 'colorFill':'#f2e6e4', 'colorStoker':'#dcaccc', 'nombreCampo':'NOM_MUN', 'capa':'	municipio_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/municipio_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=municipio_poligonos%3Amunicipio_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    //{'nombre':'', 'colorFill':'', 'colorStoker':'', 'nombreCampo':'', 'capa':'', 'gejson':''},
+    {'nombre':'Colonias', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'NOMBRE', 'capa':'colonias_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/colonias_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=colonias_poligonos%3Acolonias_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Manzanas', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'manzanas_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/manzanas_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=manzanas_poligonos%3Amanzanas_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Area Geoestadistica Municipal', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'NOM_MUN', 'capa':'areageoestadisticabasicamunicipal_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/areageoestadisticabasicamunicipal_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=areageoestadisticabasicamunicipal_poligonos%3Aareageoestadisticabasicamunicipal_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Area Geoestadistica', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'areageoestadisticabasicarural_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/areageoestadisticabasicarural_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=areageoestadisticabasicarural_poligonos%3Aareageoestadisticabasicarural_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Localidades Rurales', 'colorFill':'rgba(245,225,222,0.60)', 'colorStoker':'#f5e1de', 'nombreCampo':'NOM_LOC', 'capa':'localidadesurbanasrurales_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadesurbanasrurales_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadesurbanasrurales_poligonos%3Alocalidadesurbanasrurales_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Localidades Urbanas', 'colorFill':'rgba(245,225,222,0.60)', 'colorStoker':'#f06de6', 'nombreCampo':'NOM_LOC', 'capa':'localidadurbanasrurales_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadurbanasrurales_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadurbanasrurales_poligonos%3Alocalidadurbanasrurales_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Zona Metropolitana', 'colorFill':'rgba(192,174,90,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'zonametropoliana_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/zonametropoliana_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=zonametropoliana_poligonos%3Azonametropoliana_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    //{'nombre':'Cuerpos de Agua', 'colorFill':'#abd4dc', 'colorStoker':'#abd4dc', 'nombreCampo':'OID_1', 'capa':'cuerposagua_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/cuerposagua_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cuerposagua_poligonos%3Acuerposagua_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    //{'nombre':'', 'colorFill':'', 'colorStoker':'', 'nombreCampo':'', 'capa':'', 'gejson':''},
+    {'nombre':'AGED Rural(AM)', 'colorFill':'rgba(240,109,230,0.60)', 'colorStoker':'#f5e1de', 'nombreCampo':'', 'capa':'agebruralam_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/agebruralam_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=agebruralam_poligonos%3Aagebruralam_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'AGED Rural', 'colorFill':'rgba(245,225,222,0.60)', 'colorStoker':'#f06de6', 'nombreCampo':'', 'capa':'agebrural_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/agebrural_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=agebrural_poligonos%3Aagebrural_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    //{'nombre':'Codigo Postal', 'colorFill':'rgba(242,230,228,0.60)', 'colorStoker':'#dcaccc', 'nombreCampo':'', 'capa':'cp_poligonos', 'gejson':''},
+    {'nombre':'Codigo Postal(AM)', 'colorFill':'rgba(242,230,228,0.60)', 'colorStoker':'#dcaccc', 'nombreCampo':'NOM_MUN', 'capa':'cpam_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/cpam_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cpam_poligonos%3Acpam_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'SIA', 'colorFill':'#cbfbcb', 'colorStoker':'#cbfbcb', 'nombreCampo':'', 'capa':'sia_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/sia_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sia_poligonos%3Asia_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Vegetacion Densa', 'colorFill':'#acd39c', 'colorStoker':'#acd39c', 'nombreCampo':'', 'capa':'vegetaciondensa_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/vegetaciondensa_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=vegetaciondensa_poligonos%3Avegetaciondensa_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Municipio', 'colorFill':'rgba(242,230,228,0.60)', 'colorStoker':'#dcaccc', 'nombreCampo':'NOM_MUN', 'capa':'	municipio_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/municipio_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=municipio_poligonos%3Amunicipio_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     {'nombre':'Limites Municipales', 'colorFill':'#91522d', 'colorStoker':'#91522d', 'nombreCampo':'', 'capa':'limitemunicipio_line', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/limitemunicipio_line/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=limitemunicipio_line%3Alimitemunicipio_line&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Ríos', 'colorFill':'#abd4dc', 'colorStoker':'#abd4dc', 'nombreCampo':'NOMBRE', 'capa':'rios_linestring', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/rios_linestring/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=rios_linestring%3Arios_linestring&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Montañas', 'colorFill':'#c0ae5a', 'colorStoker':'#c0ae5a', 'nombreCampo':'', 'capa':'curvas_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/curvas_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=curvas_poligonos%3Acurvas_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Localidades Rurales Limites(Puntos)', 'colorFill':'#f5e1de', 'colorStoker':'#f5e1de', 'nombreCampo':'NOM_LOC', 'capa':'localidadesruralesglobales_points', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadesruralesglobales_points/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadesruralesglobales_points%3Alocalidadesruralesglobales_points&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Localidades Rurales(Puntos)', 'colorFill':'#f5e1de', 'colorStoker':'#f5e1de', 'nombreCampo':'NOM_LOC', 'capa':'localidadesrurales_points', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadesrurales_points/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadesrurales_points%3Alocalidadesrurales_points&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
-    {'nombre':'Centro de Gestión Comunitaria(CGC)', 'colorFill':'#f5e1de', 'colorStoker':'#f5e1de', 'nombreCampo':'Nom_C', 'capa':'cgc_puntos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/cgc_puntos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cgc_puntos%3Acgc_puntos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Calles', 'colorFill':'#f8d3a1', 'colorStoker':'#a88951', 'nombreCampo':'', 'capa':'calles_liners', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/calles_liners/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=calles_liners%3Acalles_liners&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Red Vial Primaria', 'colorFill':'#f8d3a1', 'colorStoker':'#a88951', 'nombreCampo':'', 'capa':'redvial1_liners', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/redvial1_liners/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=redvial1_liners%3Aredvial1_liners&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Red Vial Secundaria', 'colorFill':'#f2faba', 'colorStoker':'#8d9255', 'nombreCampo':'', 'capa':'redvial2_liners', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/redvial2_liners/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=redvial2_liners%3Aredvial2_liners&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Red Vial Terciaria', 'colorFill':'#fbfcfb', 'colorStoker':'#7c7c7c', 'nombreCampo':'', 'capa':'redvial3_liners', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/redvial3_liners/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=redvial3_liners%3Aredvial3_liners&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Red Vial Residencial', 'colorFill':'#cbfbcb', 'colorStoker':'#b4b4b2', 'nombreCampo':'', 'capa':'redvial_liners', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/redvial_liners/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=redvial_liners%3Aredvial_liners&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Acueductos', 'colorFill':'#a88951', 'colorStoker':'#a88951', 'nombreCampo':'', 'capa':'acueducto_liners', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/acueducto_liners/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=acueducto_liners%3Aacueducto_liners&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Corrientes', 'colorFill':'#abd4dc', 'colorStoker':'#abd4dc', 'nombreCampo':'', 'capa':'corrientes_liners', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/corrientes_liners/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=corrientes_liners%3Acorrientes_liners&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Ríos', 'colorFill':'#abd4dc', 'colorStoker':'#abd4dc', 'nombreCampo':'', 'capa':'rios_linestring', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/rios_linestring/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=rios_linestring%3Arios_linestring&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Montañas', 'colorFill':'rgba(192,174,90,0.60)', 'colorStoker':'#c0ae5a', 'nombreCampo':'', 'capa':'curvas_poligonos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/curvas_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=curvas_poligonos%3Acurvas_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Hitos', 'colorFill':'rgba(245,225,222,0.60)', 'colorStoker':'#f5e1de', 'nombreCampo':'NOMBRE', 'capa':'hitos_puntos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/hitos_puntos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=hitos_puntos%3Ahitos_puntos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Sitios de Interes', 'colorFill':'rgba(245,225,222,0.60)', 'colorStoker':'#f5e1de', 'nombreCampo':'NOMBRE', 'capa':'sitiosdeinteres_puntos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/sitiosdeinteres_puntos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=sitiosdeinteres_puntos%3Asitiosdeinteres_puntos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Localidades Rurales Limites(Puntos)', 'colorFill':'rgba(245,225,222,0.60)', 'colorStoker':'#f5e1de', 'nombreCampo':'NOM_LOC', 'capa':'localidadesruralesglobales_points', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadesruralesglobales_points/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadesruralesglobales_points%3Alocalidadesruralesglobales_points&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Localidades Rurales(Puntos)', 'colorFill':'rgba(245,225,222,0.60)', 'colorStoker':'#f5e1de', 'nombreCampo':'NOM_LOC', 'capa':'localidadesrurales_points', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/localidadesrurales_points/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=localidadesrurales_points%3Alocalidadesrurales_points&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Centro de Gestión Comunitaria(CGC)', 'colorFill':'rgba(245,225,222,0.60)', 'colorStoker':'#f5e1de', 'nombreCampo':'Nom_C', 'capa':'cgc_puntos', 'gejson':'http://cartografia.xalapa.gob.mx/geoserver/cgc_puntos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=cgc_puntos%3Acgc_puntos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
 ];
 var map;
 
@@ -95,7 +108,7 @@ var map;
 
 /**
  * 
- * * Carga de capas
+ * * Carga de capas.
  * !
  * TODO
  * ?
@@ -138,16 +151,34 @@ function generateGeoJson() {
                         }`
                     );
 
-                    var capaReal = new ol.layer.Vector({
-                        title: element['nombre'],
-                        visible: false,
-                        source: new ol.source.Vector({features: features}),
-                        style: new ol.style.Style({
-                            fill: new ol.style.Fill({color: element['colorFill']}),
-                            stroke: new ol.style.Stroke({color: element['colorStoker']}),
-                            text: new ol.style.Text({text: charges['properties'][element['nombreCampo']],})
+                    if (chargesGeometryType == 'Point' || chargesGeometryType == 'MultiPoint') {
+                        var fillStyle = element['colorFill'];
+                        var stokStyle = element['colorStoker'];
+                        var capaReal = new ol.layer.Vector({
+                            title: element['nombre'],
+                            visible: false,
+                            source: new ol.source.Vector({features: features}),
+                            style: new ol.style.Style({
+                                image: new ol.style.Circle({
+                                    radius: 5,
+                                    fill: new ol.style.Fill({color: '#dcaccc'}),
+                                    stroke: new ol.style.Stroke({color: element['colorStoker']}),   
+                                }),
+                                text: new ol.style.Text({text: charges['properties'][element['nombreCampo']],})
+                            })
                         })
-                    })
+                    } else {
+                        var capaReal = new ol.layer.Vector({
+                            title: element['nombre'],
+                            visible: false,
+                            source: new ol.source.Vector({features: features}),
+                            style: new ol.style.Style({
+                                fill: new ol.style.Fill({color: element['colorFill'], opacity: '0.3'}),
+                                stroke: new ol.style.Stroke({color: element['colorStoker']}),
+                                text: new ol.style.Text({text: charges['properties'][element['nombreCampo']],})
+                            })
+                        })
+                    }
 
                     map.addLayer(capaReal);
                 }
@@ -208,6 +239,13 @@ function functionViewPrimariCapa(id) {
     );
 }
 
+/**
+ * 
+ * * Cambia el estado de los estilos para la hora desobre poner o de dar click a una de las capas.
+ * !
+ * TODO
+ * ?
+*/
 map.on('singleclick', function(evt) {  
     var feature = map.forEachFeatureAtPixel(evt.pixel, function(feature, layer) {
         return feature;

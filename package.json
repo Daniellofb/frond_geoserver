@@ -1,7 +1,7 @@
 {
-  "name": "pro-sidebar-template",
+  "name": "frond_geoserver",
   "version": "1.0.0",
-  "description": "Responsive sidebar template with dropdown menu based on bootstrap framwork",
+  "description": "Sistema de FROND END para la carga de capas del Ayuntamiento de Xalapa",
   "main": "index.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.8.2",
@@ -14,21 +14,24 @@
     "browser-sync": "^2.26.5",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
+    "gulp-build": "^0.5.3",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0"
   },
   "scripts": {
-    "start": "gulp"
+    "gulp": "gulp",
+    "start": "gulp serve --host 0.0.0.0 --disable-host-check --port=3000 --aot=false",
+    "build": "NODE_OPTIONS='--max_old_space_size=8192' gulp build --configuration produccion --prod --base-href http://cartografia.xalapa.gob.mx/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azouaoui-med/pro-sidebar-template.git"
+    "url": "git+https://github.com/Daniellofb/frond_geoserver.git"
   },
   "keywords": [],
   "author": "Azouaoui Mohamed",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/azouaoui-med/pro-sidebar-template/issues"
+    "url": "https://github.com/Daniellofb/frond_geoserver/issues"
   },
-  "homepage": "https://github.com/azouaoui-med/pro-sidebar-template#readme"
+  "homepage": "https://github.com/Daniellofb/frond_geoserver#readme"
 }
