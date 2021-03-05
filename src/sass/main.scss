@@ -151,6 +151,9 @@ body {
 
 
 /*----------sidebar background images --------------*/
+.sidebar-bg.bg0 .sidebar-wrapper {
+    background-image: url(../img/bg0.png);
+}
 
 .sidebar-bg.bg1 .sidebar-wrapper {
     background-image: url(../img/bg1.jpg);
@@ -168,6 +171,9 @@ body {
     background-image: url(../img/bg4.jpg);
 }
 
+[data-bg="bg0"] {
+    background-image: url(../img/bg0.png);
+}
 
 [data-bg="bg1"] {
     background-image: url(../img/bg1.jpg);

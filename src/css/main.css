@@ -442,6 +442,9 @@ body {
     margin-right: 0px; }
 
 /*----------sidebar background images --------------*/
+.sidebar-bg.bg0 .sidebar-wrapper {
+  background-image: url(../img/bg0.png); }
+
 .sidebar-bg.bg1 .sidebar-wrapper {
   background-image: url(../img/bg1.jpg); }
 
@@ -453,6 +456,9 @@ body {
 
 .sidebar-bg.bg4 .sidebar-wrapper {
   background-image: url(../img/bg4.jpg); }
+
+[data-bg="bg0"] {
+  background-image: url(../img/bg0.png); }
 
 [data-bg="bg1"] {
   background-image: url(../img/bg1.jpg); }
