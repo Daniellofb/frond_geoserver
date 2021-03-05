@@ -295,3 +295,8 @@ map.on('singleclick', function(evt) {
         parent.after(feature['values_']['NOMBRE']);
     }
 });
+
+function downloadFiles(name) {
+    console.log(name);
+    window.location.href = './../download/'+name+'.zip';
+}
