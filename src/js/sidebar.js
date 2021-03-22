@@ -7,6 +7,10 @@
 */
 var realArrayCapas = [
     //{'nombre':'', 'colorFill':'', 'colorStoker':'', 'nombreCampo':'', 'capa':'', 'gejson':''},
+    {'nombre':'Zona Seguridad Publica', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'zona_seguiridad_publica_poligonos', 'gejson':'https://cartografia.xalapa.gob.mx/geoserver/zona_centrica_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=zona_centrica_poligonos%3Azona_centrica_poligonos&maxFeatures=50&outputFormat=application%2Fjson&srsname=EPSG:3857'},
+    {'nombre':'Zona Cuadrantes', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'zona_cuadrantes_poligonos', 'gejson':'&srsname=EPSG:3857'},
+    {'nombre':'Zona Sectores', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'zona_sector_poligonos', 'gejson':'&srsname=EPSG:3857'},
+    {'nombre':'Zona Centrica', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'zona_centrica_poligonos', 'gejson':'https://cartografia.xalapa.gob.mx/geoserver/zona_centrica_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=zona_centrica_poligonos%3Azona_centrica_poligonos&maxFeatures=50&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     {'nombre':'Zonas Covid', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'zonas_covid_poligonos', 'gejson':'https://cartografia.xalapa.gob.mx/geoserver/zonas_covid_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=zonas_covid_poligonos%3Azonas_covid&maxFeatures=500&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     {'nombre':'Colonias', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'NOMBRE', 'capa':'colonias_poligonos', 'gejson':'https://cartografia.xalapa.gob.mx/geoserver/colonias_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=colonias_poligonos%3Acolonias_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
     {'nombre':'Manzanas', 'colorFill':'rgba(250,242,183,0.60)', 'colorStoker':'#e7c48c', 'nombreCampo':'', 'capa':'manzanas_poligonos', 'gejson':'https://cartografia.xalapa.gob.mx/geoserver/manzanas_poligonos/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=manzanas_poligonos%3Amanzanas_poligonos&maxFeatures=5000&outputFormat=application%2Fjson&srsname=EPSG:3857'},
@@ -363,6 +367,19 @@ map.on('singleclick', function(evt) {
             }));
         };
 
+        document.getElementById("infoCard").style.display = "block";
+
+        var divTittle = document.getElementById('createTittle');
+        while (divTittle.firstChild) {
+            divTittle.removeChild(divTittle.firstChild);
+        };
+
+        var parentInicialTittle = document.getElementById('createTittle');
+        var parentTittle = document.createElement("div");
+
+        parentInicialTittle.appendChild(parentTittle);
+        parentTittle.after(feature['values_']['capa']);
+
         var div = document.getElementById('createInfo');
         while (div.firstChild) {
             div.removeChild(div.firstChild);
@@ -476,6 +493,8 @@ map.on('singleclick', function(evt) {
                     break;
             }
         }
+    } else {
+        document.getElementById("infoCard").style.display = "none";
     };
 });
 

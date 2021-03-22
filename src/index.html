@@ -4,9 +4,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        
         <title>Ayuntamiento de Xalapa</title>
-
         <link rel="shortcut icon" href="https://ayuntamiento.xalapa.gob.mx/o/SGEHome2019-theme/images/favicon.ico" type="image/png">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -15,7 +13,6 @@
         <link rel="stylesheet" href="./css/sidebar.css">
         <link rel="stylesheet" href="./css/sidebar-themes.css">
         <link rel="stylesheet" href="./css/main.css">
-
         <script src="https://cdn.jsdelivr.net/gh/openlayers/openlayers.github.io@master/en/v6.5.0/build/ol.js"></script>
     </head>
     <body>
@@ -82,7 +79,7 @@
                                         <li>
                                             <input type="checkbox" id="check9" value="t9">
                                             <label for="check9" style="color: #c7c7c7;">Codigo Postal</label>
-                                            <i class="fa fa-download" style="color: white; float: right; padding-right: 5%; margin-top: 5%;"></i>
+                                            <i class="fa fa-download" style="color: white; float: right; padding-right: 5%; margin-top: 5%;" onclick="downloadFiles('Codigo Postal')"></i>
                                         </li>
                                         <li>
                                             <input type="checkbox" id="check10" value="t10" onclick="functionViewStatus('Manzanas')">
@@ -232,7 +229,7 @@
                                         <li>
                                             <input type="checkbox" id="check28" value="t28">
                                             <label for="check28" style="color: #c7c7c7;">Áreas Naturales</label>
-                                            <i class="fa fa-download" style="color: white; float: right; padding-right: 5%; margin-top: 5%;"></i>
+                                            <i class="fa fa-download" style="color: white; float: right; padding-right: 5%; margin-top: 5%;" onclick="downloadFiles('Areas Naturales')"></i>
                                         </li>
                                         <li>
                                             <input type="checkbox" id="check29" value="t29" onclick="functionViewStatus('SIA')">
@@ -279,6 +276,36 @@
                             </li>
                             <li class="sidebar-dropdown">
                                 <a href="#">
+                                    <i class="fa fa-car"></i>
+                                    <span class="menu-text">Seguridad Ciudadana</br>y Tránsito Municipal</span>
+                                </a>
+                                <div class="sidebar-submenu">
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" id="check54" value="t54" onclick="functionViewStatus('Zona Centrica')">
+                                            <label for="check54" style="color: #c7c7c7;">Zona Centrica</label>
+                                            <i class="fa fa-download" style="color: white; float: right; padding-right: 5%; margin-top: 5%;" onclick="downloadFiles('Zona Centrica')"></i>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="check55" value="t55" onclick="functionViewStatus('Zona Sectores')">
+                                            <label for="check55" style="color: #c7c7c7;">Zona Sectores</label>
+                                            <i class="fa fa-download" style="color: white; float: right; padding-right: 5%; margin-top: 5%;" onclick="downloadFiles('Zona Sectores')"></i>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="check56" value="t56" onclick="functionViewStatus('Zona Cuadrantes')">
+                                            <label for="check56" style="color: #c7c7c7;">Zona Cuadrantes</label>
+                                            <i class="fa fa-download" style="color: white; float: right; padding-right: 5%; margin-top: 5%;" onclick="downloadFiles('Zona Cuadrantes')"></i>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="check57" value="t57" onclick="functionViewStatus('Zona Seguridad Publica')">
+                                            <label for="check57" style="color: #c7c7c7;">Zona Seguridad Publica</label>
+                                            <i class="fa fa-download" style="color: white; float: right; padding-right: 5%; margin-top: 5%;" onclick="downloadFiles('Zona Seguridad Publica')"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="sidebar-dropdown">
+                                <a href="#">
                                     <i class="fa fa-globe"></i>
                                     <span class="menu-text">Mapas Base</span>
                                 </a>
@@ -302,27 +329,11 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="header-menu">
-                                <span>Herramientas</span>
-                            </li>
                             <li>
                                 <a href="#">
                                     <i class="fa fa-book"></i>
                                     <span class="menu-text">Documentación</span>
                                 </a>
-                            </li>
-                            <li class="sidebar-dropdown">
-                                <a href="#">
-                                    <i class="fa fa-calendar"></i>
-                                    <span class="menu-text">Información</span>
-                                </a>
-                                <div class="sidebar-submenu">
-                                    <ul>
-                                        <li>
-                                            <h2 style="color: #c7c7c7; text-align: center;" id="createInfo">Información</h2>
-                                        </li>
-                                    </ul>
-                                </div>
                             </li>
                             <li class="sidebar-dropdown">
                                 <a href="#">
@@ -386,9 +397,18 @@
             <main class="page-content">
                 <div class="container" style="margin-left: inherit; padding-left: 0px; position: relative; margin-top: -15px;">
                     <div id="map" class="map" style="width: 100%; height: 100%; position: fixed;"></div>
-                    <a id="toggle-sidebar" class="btn btn-secondary rounded-0" href="#" style="position: fixed; margin: 13px 0px 0px 39px;">
+                    <a id="toggle-sidebar" class="btn btn-secondary rounded-0" href="#" style="position: fixed; margin: 1% 0% 0% 3%;">
                         <i class="fa fa-map" aria-hidden="true"></i>
                     </a>
+                </div>
+                <div class="row justify-content-end">
+                    <div class="card text-white bg-secondary mb-3" id="infoCard" style="max-width: 18rem; position: fixed; margin: 0% 2% 0% 0%; display: none;">
+                        <div class="card-header">Información</div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="createTittle">Cargando...</h5>
+                            <p class="card-text" id="createInfo">Cargando...</p>
+                        </div>
+                    </div>
                 </div>
             </main>
         </div>
